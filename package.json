@@ -1,13 +1,17 @@
 {
   "name": "vite-plugin-tscheck",
   "version": "0.1.0",
-  "type": "module",
+  "description": "a vite plugin for check ts type",
+  "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "node ./test/check.js"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   }
 }
