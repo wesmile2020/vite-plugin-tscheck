@@ -3,15 +3,31 @@
   "version": "0.1.0",
   "description": "a vite plugin for check ts type",
   "main": "./dist/index.js",
+  "files": ["dist"],
+  "keywords": ["vite", "typescript", "syntax check"],
   "scripts": {
     "build": "tsc",
     "test": "node ./test/check.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesmile2020/vite-plugin-tscheck.git"
+  },
+  "author": "lei.li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesmile2020/vite-plugin-tscheck/issues"
+  },
+  "homepage": "https://github.com/wesmile2020/vite-plugin-tscheck#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "rollup": "^3.28.1"
   },
   "dependencies": {
+    "@rollup/pluginutils": "^5.0.4",
     "chalk": "^4.1.2"
   }
 }
