@@ -40,6 +40,7 @@ class Engine {
       ...this._service.getSyntacticDiagnostics(filename),
       ...this._service.getSemanticDiagnostics(filename),
     ];
+    console.log('\n');
     return !LogUtils.logDiagnosticError(diagnostics);
   }
 }
